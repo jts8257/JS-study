@@ -19,15 +19,15 @@
     document.querySelector('body').style.color='black'; ">
 -->
 
-<input id="dark_normal" type="button" value="Dark-mode" onclick="
-if(document.querySelector('#dark_normal').value === 'Dark-mode' ){
+<input class="dark_normal" type="button" value="Dark-mode" onclick="
+if(this.value === 'Dark-mode' ){
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
-    document.querySelector('#dark_normal').value = 'Day-mode'; 
+    this.value = 'Day-mode'; 
 } else{
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('body').style.color='black';
-    document.querySelector('#dark_normal').value = 'Dark-mode'; 
+    this.value = 'Dark-mode'; 
 }">
 
 
@@ -35,6 +35,19 @@ if(document.querySelector('#dark_normal').value === 'Dark-mode' ){
     <div style="margin-top: 30px ;">
         font Font fOnt foNt fonT
     </div>
+
+    <input class="dark_normal" type="button" value="Dark-mode" onclick="
+if(this.value === 'Dark-mode' ){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    this.value = 'Day-mode'; 
+} else{
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    this.value = 'Dark-mode'; 
+}">
     
+
+
 </body>
 </html>

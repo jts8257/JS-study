@@ -1,0 +1,10 @@
+생할코딩 자료
+
+HTML과 Javascript의 만남
+
+(1) <script> </script> 태그 안에는 js로 이해함.
+(2) event : js가 사용자와 상호작용하는데 핵심적인 역할을 함.
+    -대표적으로는 onclick, onchange 등의 이벤트가 있음.
+    -자세한 이벤트는 MDN을 참조하는게 좋음.
+(3) console.log
+

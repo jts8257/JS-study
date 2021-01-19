@@ -1,0 +1,15 @@
+
+
+웹을 바꾸는걸 js가 어떻게 하냐!  -> 제어할 태그,id,class를 선택하면 된다!
+선택은 어떻게하냐! -> CSS seletor랑 비슷한데, document.querySelector / document.querySelectorbyID / document.querySelectorbyClass 등이 사용된다.
+
+
+아래처럼 선택하고 style을 바꾼다.
+
+    <input type="button" value="Dark mode" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white'; ">
+
+    <input type="button" value="Normal mode" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black'; ">

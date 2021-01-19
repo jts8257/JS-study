@@ -1,0 +1,28 @@
+생할코딩 + 노마드 코더 자료
+Datatype
+
+동적 언어(느슨한 타입)
+자바스크립트는 동적언어이다. 이는 C언어처럼 변수의 타입을 미리 선언할 필요가 없다는 것을 의미한다.
+
+
+
+[Number&String]
+숫자는 숫자를 사용한다.
+문자(열)는 " " 로 특정짓는다. 문자(열)은 다양한 property를 이용할 수 있는데, 
+"Hello World".length 등이 있다.  
+
+[Variable]
+let A = 1
+const B = 2
+
+[Boolean]
+
+
+[Array]
+arr =[1,2,3,4,5]
+
+[Object]
+obj ={ name : 'obj',
+job : 'js}
+
+

@@ -20,13 +20,14 @@
 -->
 
 <input class="dark_normal" type="button" value="Dark-mode" onclick="
+let target = document.querySelector('body');
 if(this.value === 'Dark-mode' ){
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
+    target.style.backgroundColor='black';
+    target.style.color='white';
     this.value = 'Day-mode'; 
 } else{
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
+    target.style.backgroundColor='white';
+    target.style.color='black';
     this.value = 'Dark-mode'; 
 }">
 
@@ -37,13 +38,14 @@ if(this.value === 'Dark-mode' ){
     </div>
 
     <input class="dark_normal" type="button" value="Dark-mode" onclick="
-if(this.value === 'Dark-mode' ){
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
+    let target = document.querySelector('body');
+    if(this.value === 'Dark-mode' ){
+        target.style.backgroundColor='black';
+        target.style.color='white';
     this.value = 'Day-mode'; 
 } else{
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
+    target.style.backgroundColor='white';
+    target.style.color='black';
     this.value = 'Dark-mode'; 
 }">
     

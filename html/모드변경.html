@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>모드변경</title>
-    
-    <style>
-        a{
-            text-decoration: none;
-        }
+    <link rel="stylesheet" href="C:\Users\User\Desktop\JS-study\css\styles.css">
 
-    </style>
+    <script>
+        function darkDayHandler(self){
+            let a_list = document.querySelectorAll('a');
+            let target = document.querySelector('body');
+            if(self.value==='Dark-mode'){
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                self.value= 'Day-mode';
+                let i=0;
+                while(i<a_list.length){
+                    a_list[i].style.color='powderblue';
+                    i++;}
+            } else{
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                self.value = 'Dark-mode';
+                let i=0;
+                while(i<a_list.length){
+                    a_list[i].style.color='blue';
+                    i++;}
+                }
+            }
+    </script>
 
 </head>
 <body>
@@ -20,29 +38,10 @@
 </h1>
 
 <input class="dark_normal" type="button" value="Dark-mode" onclick="
-let a_list = document.querySelectorAll('a');
-let target = document.querySelector('body');
-if(this.value === 'Dark-mode' ){
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    this.value = 'Day-mode'; 
-    let i=0;
-    while(i<a_list.length){
-        a_list[i].style.color='powderblue';
-        i++;
-     }
-} else{
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    this.value = 'Dark-mode'; 
-    let i=0;
-    while(i<a_list.length){
-        a_list[i].style.color='blue';
-        i++;
-     }
-}">
+darkDayHandler(this)">
 
-    <div style="margin-top: 30px ;">
+
+    <div class="link-list">
         <ol>
             <li>
                 <a href="https://ko.wikipedia.org/wiki/HTML" target="_blank">HTML</a>

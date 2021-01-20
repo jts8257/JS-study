@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 5px 15px;
+}
+
+.dark_normal {
+  background-color: tomato;
+  border-top-left-radius: 5%;
+  border: none;
+  color: white;
+}
+
+.link-list {
+  margin-top: 30px;
+}

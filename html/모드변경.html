@@ -8,32 +8,35 @@
 
     <script>
 
-        function linkSetColor(color){
+        let Body = {
+            SetColor:function(color){ 
+                document.querySelector('body').style.color=color;},
+            SetBackgroundColor:function(color){
+                document.querySelector('body').style.backgroundColor=color}
+        }
+
+        let Link ={
+            SetColor:function(color){
             let a_list = document.querySelectorAll('a');
             let i=0;
                 while(i<a_list.length){
                     a_list[i].style.color=color;
                     i++;}
-                }
-        function bodySetColor(color){
-            document.querySelector('body').style.color=color;
+            }
         }
 
-        function bodySetBackgroundColor(color){
-            document.querySelector('body').style.backgroundColor=color;
-        }
 
         function darkDayHandler(self){
             if(self.value==='Dark-mode'){
-                bodySetBackgroundColor('black');
-                bodySetColor('white');
+                Body.SetBackgroundColor('black');
+                Body.SetColor('white');
                 self.value= 'Day-mode';
-                linkSetColor('powderblue')
+                Link.SetColor('powderblue')
             } else{
-                bodySetBackgroundColor('white');
-                bodySetColor('black');
+                Body.SetBackgroundColor('white');
+                Body.SetColor('black');
                 self.value = 'Dark-mode';
-                linkSetColor('blue')
+                Link.SetColor('blue')
                 }
             }
     </script>

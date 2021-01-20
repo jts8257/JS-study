@@ -7,3 +7,6 @@
 this를 활용할 수 있는데, this는 자기 자신을 가리키는 것을 의미함.
 
 객체에 속해있는 함수는 메소드라고 한다.
+
+documnet는 객체이고
+document.querySelector() 에서  querySelector()는 document라는 객체에 속해있으므로 매소드이다.

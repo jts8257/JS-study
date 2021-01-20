@@ -13,3 +13,5 @@
     <input type="button" value="Normal mode" onclick="
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('body').style.color='black'; ">
+
+js 파일을 따로 만들어서 할 순 없나?
